@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is a Data Structure? </title>
+    <!-- Link to a single shared stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1 style="font-weight: bolder;">What is a Data Structure</h1>
+        <p></p>
+    </header>
+    <!-- <menu id="menu">
+        <ul>
+            <li><a href="#introduction">What is a Data Structure</a></li>
+            <li><a href="#how-it-works">How Data Structures Work</a></li>
+            <li><a href="#types">Types of Data Structures</a></li>
+            <li><a href="#video">Video Lecture</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul> -->
+    </menu>
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>What is a Data Structure?</h2>
+        <p>
+            A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
+        </p>
+    </section>
+
+    
+    <!-- Types Section -->
+    <section id="types">
+        <h2>Data structures can be classified into two broad categories:</h2>
+        <ol>
+            <li>
+                <img id="eximg" src="typesofds.png" alt="[Type of Data Structures]">
+                <h3>Linear Data Structure:</h3>
+                <p>Data structure in which data elements are arranged sequentially or linearly, where each element is attached to its previous and next adjacent elements, is called a linear data structure.</p>
+                <p>Example: Array, Stack, Queue, Linked List, etc.</p>
+            </li>
+            <li><h3>Static Data Structure:</h3>
+                <p>Static data structure has a fixed memory size. It is easier to access the elements in a static data structure.</p>
+                <p>Example: array.</p>
+            </li>
+            <li><h3>Dynamic Data Structure:</h3>
+                <p>In dynamic data structure, the size is not fixed. It can be randomly updated during the runtime which may be considered efficient concerning the memory (space) complexity of the code.</p>
+                <p>Example: Queue, Stack, etc.</p>
+            </li>
+            <li><h3>Non-Linear Data Structure:</h3>
+                <p>Data structures where data elements are not placed sequentially or linearly are called non-linear data structures. In a non-linear data structure, we can’t traverse all the elements in a single run only.</p>
+                <p>Examples: Trees and Graphs.</p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h2>How Does Data Structures Work?</h2>
+        <p>
+            Data structures work by providing a specific way to organize, store, and manage data in memory, allowing for efficient access and modification of that data. Each data structure provides different ways to handle data, depending on the type of operations (e.g., insertion, deletion, searching, sorting) and the required efficiency. 
+            <br><br>
+            To understand how data structures work, let's break down some of their fundamental components:
+            <br><br>
+            <ol>
+                <li><b>Memory Organization:</b><br>
+                    Data structures manage how data is laid out in computer memory (RAM). Some data structures, like arrays, use contiguous memory allocation, meaning all elements are stored next to each other in memory. Others, like linked lists, use non-contiguous memory allocation, where elements are scattered in memory but linked through pointers or references.
+                    <br><br>
+                </li>
+                <li><b>Data Access and Modification:</b><br>
+                    Direct Access: Some data structures, like arrays, allow direct access to elements using an index. For example, if you want to access the 5th element in an array, you can directly reference it using its index (array[4] in most programming languages).
+                    Sequential Access: Other data structures, like linked lists, require sequential access to elements. To access the 5th element in a linked list, you have to start from the head and traverse through each node until you reach the desired element.
+                    Operations Supported: Data structures are designed to efficiently support various operations, such as:
+                    <ul>
+                        <li><b>Insertion:</b> Adding an element to the data structure (e.g., appending to an array or inserting into a linked list).</li>
+                        <li><b>Deletion:</b> Removing an element from the data structure (e.g., removing an element from a queue).</li>
+                        <li><b>Searching:</b> Finding an element within the data structure (e.g., searching for a value in a binary search tree).</li>
+                        <li><b>Sorting:</b> Arranging elements in a particular order (e.g., sorting an array in ascending order).</li>
+                    </ul>
+                </li>
+                <li><b>Time and Space Complexity:</b><br>
+                    The choice of data structure affects the time and space complexity of an algorithm. 
+                    <br>For example:
+                    <ul>
+                        <li>Arrays have O(1) time complexity for accessing an element by index but O(n) for inserting or deleting an element at a specific position.</li>
+                        <li>Linked Lists have O(1) time complexity for inserting or deleting an element at the beginning but O(n) for accessing an element at a specific index.</li>
+                        <li>Hash Tables provide average O(1) time complexity for insertion, deletion, and search operations but can degrade to O(n) in the worst case (due to collisions).</li>
+                    </ul>
+                </li>
+            </ol>
+        </p>
+        <img id="eximg" src="ds_ex.png" alt="Examples of Data Structure Examples">
+        <p style="text-align: center;">You will learn about these data structures when you go further in learning data structures. Just don't worry we will get you covered....</p>
+    </section>
+
+
+    <!-- Visualization Section -->
+    <!-- <section id="visualization">
+        <h2>Visualization</h2>
+        <p>Click the button below to load the visualization animation.</p>
+        Button to load visualization
+        <button type="submit" onclick="loadVisualization()">Load Visualization</button>
+        <div id="visualization-container">
+            The iframe will be inserted here
+        </div>
+    </section> -->
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Video Explanation</h2>
+        <iframe width="560" height="315" id="youtube_vid" src="https://www.youtube.com/embed/rYu27h4iAkc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <h2>Quiz: Test Your Knowledge</h2>
+        <p>Want to test your knowledge about Data Structure? Click the button below to start the quiz!</p>
+        <button class ="button" onclick="window.location.href='dsquiz.html'">Start Quiz</button>
+    </section>
+
+    <div>
+        <a href="#types" class="button-like-linkk prev">Prev</a>
+        <button class="button-like-linkk prev" href="#" onclick="loadContent('Basics/stack/stack.html')">Next</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Data Structures Notes. All rights reserved.</p>
+        <p>Contact: Dr. Bomma Rama Krishna</p>
+    </footer>
+
+    <!-- Link to JavaScript file for quiz logic, etc. -->
+    <script src="dsa.js"></script>
+</body>
+
+</html>
