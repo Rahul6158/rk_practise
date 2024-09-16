@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+h2, h3, h4 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+pre {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question button {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quiz-question button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+#eximg {
+    width: 60%;
+    height: 30%;
+    display: block; /* Makes the image a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+#youtube_vid{
+    display: block; /* Makes the image a block element */
+    margin: 0 auto; 
+}
+
+#menu{
+    border: 2px solid black;
+  }
+
+  /* Make links look more like buttons */
+.button-like-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #000275;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+}
+
+.button {
+    --bg: black;
+    --hover-bg: #00e01e;
+    --hover-text: #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    /* width: 100%; */
+    font-weight: bolder;
+  }
+  
+  .button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  .button:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+
+  /* Combined styles for prev-like link */
+.button-like-linkk {
+    display: inline-block; /* Make it look like a button */
+    padding: 8px 16px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    background-color: var(--bg); /* Background color variable */
+    color: #000; /* Text color */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    border: 1px solid var(--bg); /* Border styling */
+    font-weight: bolder; /* Make text bold */
+    /* width: 100%; Full width */
+}
+
+/* Variable declarations for prev button */
+.prev {
+    --bg: #000000; /* Default background color */
+    --hover-bg: #00d9ff; /* Background color on hover */
+    --hover-text: #ffffff; /* Text color on hover */
+    color: #ffffff; /* Default text color */
+}
+
+/* Hover effect for the prev button */
+.prev:hover {
+    color: var(--hover-text); /* Change text color on hover */
+    background: var(--hover-bg); /* Change background color on hover */
+    transform: translate(-0.25rem, -0.25rem); /* Slight translation on hover */
+    box-shadow: 0.25rem 0.25rem var(--bg); /* Box shadow effect */
+}
+
+/* Active state for the prev button */
+.prev:active {
+    transform: translate(0); /* Reset transformation on click */
+    box-shadow: none; /* Remove shadow on click */
+}
