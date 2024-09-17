@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What is a Data Structure? </title>
     <!-- Link to a single shared stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -28,14 +29,14 @@
     <section id="introduction">
         <h2>What is Stack</h2>
         <p>
-            A Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out). LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.
+            A stack is a linear data structure where operations follow a specific order. This order can either be LIFO (Last In, First Out) or FILO (First In, Last Out). In LIFO, the most recently added element is removed first, while in FILO, the first element added is the last to be removed.
         </p>
         
     </section>
     <section id="introduction">
         <h2>LIFO(Last In First Out) Principle in Stack Data Structure:</h2>
         <p>
-            This strategy states that the element that is inserted last will come out first. You can take a pile of plates kept on top of each other as a real-life example. The plate which we put last is on the top and since we remove the plate that is at the top, we can say that the plate that was put last comes out first.
+            The LIFO (Last In, First Out) principle in a stack means that the last item added to the stack is the first one to be removed. Think of a stack of plates: you add plates to the top, and when you need one, you take the top plate first. In the same way, in a stack data structure, the most recently added item is the first to be accessed or removed.
         </p>
     </section>
     <section id="introduction">
@@ -51,11 +52,11 @@
         <h2>Key Operations on Stack Data Structures</h2>
         <ul>
 
-            <li>Push: Adds an element to the top of the stack.</li>
-            <li>Pop: Removes the top element from the stack.</li>
-            <li>Peek: Returns the top element without removing it.</li>
-            <li> IsEmpty: Checks if the stack is empty.</li> 
-            <li> IsFull: Checks if the stack is full (in case of fixed-size arrays).</li>
+            <li><b>Push</b>: Inserts an element at the top of the stack.</li>
+            <li><b>Pop:</b> Removes the element from the top of the stack.</li>
+            <li><b>Peek:</b> Retrieves the top element without removing it.</li>
+            <li><b>IsEmpty:</b> Determines if the stack is empty.</li> 
+            <li><b>IsFull:</b> Checks if the stack has reached its capacity (for fixed-size stacks).</li>
             
         </ul>
     </section>
@@ -64,11 +65,12 @@
         <h2>Applications of Stack Data Structures</h2>
         <p>
             <ul>
-                <li>Recursion</li>
-                <li>Expression Evaluation and Parsing Depth-First Search (DFS)</li>
-                <li>Undo/Redo Operations</li>
-                <li>Browser History</li>
-                <li>Function Calls</li>
+                <li><b>Recursion:</b>Used to manage function calls in recursive algorithms.</li>
+                <li><b>Expression Evaluation and Parsing:</b>Helps in evaluating and parsing expressions (e.g., converting infix to postfix).</li> 
+                <li><b>Depth-First Search (DFS):</b> Utilized in graph traversal algorithms like DFS.</li>
+                <li><b>Undo/Redo Operations:</b> Enables undo and redo functionality in applications like text editors.</li>
+                <li><b>Browser History:</b> Maintains a history of visited pages for navigating backward and forward.</li>
+                <li><b>Function Calls:</b> Manages the sequence of function calls in programming through the call stack.</li>
             </ul>
         </p>
     </section>
@@ -79,30 +81,108 @@
         <ol>
             <li>
                 <h3>Fixed Size Stack:</h3>
-                <p>As the name suggests, a fixed size stack has a fixed size and cannot grow or shrink dynamically. If the stack is full and an attempt is made to add an element to it, an overflow error occurs. If the stack is empty and an attempt is made to remove an element from it, an underflow error occurs.</p>
-               
+                <p>A fixed-size stack has a predefined capacity and cannot change its size dynamically. If you try to add an element when the stack is full, it results in an overflow error. Similarly, if you attempt to remove an element from an empty stack, an underflow error occurs.
+            </li>  
             <li><h3>Dynamic Size Stack:</h3>
-                <p> A dynamic size stack can grow or shrink dynamically. When the stack is full, it automatically increases its size to accommodate the new element, and when the stack is empty, it decreases its size. This type of stack is implemented using a linked list, as it allows for easy resizing of the stack.</p>
+                <p>A dynamic-size stack can expand or contract as needed. When the stack reaches its capacity, it automatically increases in size to accommodate new elements. If elements are removed and the stack becomes empty, it can reduce its size. This type of stack is typically implemented using a linked list, which allows flexible resizing.
             </li>
             
         </ol>
     </section>
-    <section id="types"></section>
-        <h2>Implementation of Stack Data Structure:</h2>
-        <ol>
+    <section id="types">
+        <h2>Implementation of Stack Data Structure</h2>
+<ul>
+    <li><b>Array Implementation of Stack</b></li>
+    <li><b>Linked List Implementation of Stack</b></li>
+</ul>
+
+<ol>
+    <li>
+        <h3>Array Implementation of Stack</h3>
+        <p>In an array-based implementation, the stack is created using an array. All stack operations are performed using this array. Here’s how each stack operation is implemented:</p>
+        
+        <ul>
             <li>
-                <h3>Fixed Size Stack:</h3>
-                <p>As the name suggests, a fixed size stack has a fixed size and cannot grow or shrink dynamically. If the stack is full and an attempt is made to add an element to it, an overflow error occurs. If the stack is empty and an attempt is made to remove an element from it, an underflow error occurs.</p>
-               
-            <li><h3>Dynamic Size Stack:</h3>
-                <p> A dynamic size stack can grow or shrink dynamically. When the stack is full, it automatically increases its size to accommodate the new element, and when the stack is empty, it decreases its size. This type of stack is implemented using a linked list, as it allows for easy resizing of the stack.</p>
+                <h4>Adding an Element onto the Stack (Push Operation)</h4>
+                <p><b>Description:</b> Adds an element to the top of the stack.</p>
+                <p><b>Algorithm:</b></p>
+                <ol>
+                    <li>Check if the stack is full.</li>
+                    <li>Add the new element to the top.</li>
+                    <li>Update the top pointer or index.</li>
+                </ol>
             </li>
             
-        </ol>
-    </section>
+            <li>
+                <h4>Deleting an Element from the Stack (Pop Operation)</h4>
+                <p><b>Description:</b> Removes the element from the top of the stack.</p>
+                <p><b>Algorithm:</b></p>
+                <ol>
+                    <li>Check if the stack is empty.</li>
+                    <li>Remove the top element.</li>
+                    <li>Update the top pointer or index.</li>
+                </ol>
+            </li>
+
+            <li>
+                <h4>Viewing the Top Element of the Stack (Peek Operation)</h4>
+                <p><b>Description:</b> Views the top element without removing it.</p>
+                <p><b>Algorithm:</b></p>
+                <ol>
+                    <li>Check if the stack is empty.</li>
+                    <li>Return the top element.</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    
+    <li>
+        <h3>Linked List-Based Stack</h3>
+        <p>A stack can also be implemented using a linked list, which allocates memory dynamically. Both array-based and linked list-based stacks have similar time complexity for operations like push, pop, and peek.</p>
+        <p>In a linked list stack, nodes are not stored contiguously in memory. Each node points to the next node in the stack. If there’s not enough memory to create a new node, the stack is considered full.</p>
+        
+        <ul>
+            <li>
+                <h4>Adding a Node to the Stack (Push Operation)</h4>
+                <p><b>Description:</b> Adds a new node to the top of the stack.</p>
+                <p><b>Algorithm:</b></p>
+                <ol>
+                    <li>Create a new node.</li>
+                    <li>Set the new node’s `next` pointer to the current top node.</li>
+                    <li>Update the top pointer to the new node.</li>
+                </ol>
+            </li>
+            
+            <li>
+                <h4>Deleting a Node from the Stack (Pop Operation)</h4>
+                <p><b>Description:</b> Removes the node from the top of the stack.</p>
+                <p><b>Algorithm:</b></p>
+                <ol>
+                    <li>Check if the stack is empty.</li>
+                    <li>Store the data from the top node.</li>
+                    <li>Update the top pointer to the next node.</li>
+                    <li>Free the memory of the removed node.</li>
+                </ol>
+            </li>
+
+            <li>
+                <h4>Viewing the Top Node of the Stack (Peek Operation)</h4>
+                <p><b>Description:</b> Views the top node of the stack without removing it.</p>
+                <p><b>Algorithm:</b></p>
+                <ol>
+                    <li>Check if the stack is empty.</li>
+                    <li>Return the data from the top node.</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ol>
+
+
+    </section> 
 
     <!-- How It Works Section -->
-    <section id="how-it-works">
+    <!-- <section id="how-it-works">
         <h2>How Does Data Structures Work?</h2>
         <p>
             Data structures work by providing a specific way to organize, store, and manage data in memory, allowing for efficient access and modification of that data. Each data structure provides different ways to handle data, depending on the type of operations (e.g., insertion, deletion, searching, sorting) and the required efficiency. 
@@ -135,11 +215,8 @@
                     </ul>
                 </li>
             </ol>
-        </p>
-        <img id="eximg" src="ds_ex.png" alt="Examples of Data Structure Examples">
-        <p style="text-align: center;">You will learn about these data structures when you go further in learning data structures. Just don't worry we will get you covered....</p>
-    </section>
-
+        </p> -->
+        
 
     <!-- Visualization Section -->
     <section id="visualization">
@@ -153,10 +230,11 @@
     </section> 
 
     <!-- Video Section -->
-    <section id="video">
-        <h2>Video Explanation</h2>
-        <iframe width="560" height="315" id="youtube_vid" src="https:youtu.be\_bxGETubiKc?si=00JmRFWCuI9ww1-W" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+<section id="video">
+    <h2>Video Explanation</h2>
+    <iframe width="560" height="315" id="youtube_vid" src="https://www.youtube.com/embed/_bxGETubiKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
     
     <!-- Quiz Section -->
     <section id="quiz">
